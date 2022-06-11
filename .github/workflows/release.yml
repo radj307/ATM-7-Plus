@@ -5,7 +5,16 @@ on:
     branches:
       - main
   workflow_dispatch:
-
+    inputs:
+      increment:
+        type:     choice
+        required: false
+        default:  'Patch'
+        options:
+        - Major
+        - Minor
+        - Patch
+        description: Which SEMVER component to increment.
 
 jobs:
   generate-release:
