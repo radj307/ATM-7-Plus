@@ -2,7 +2,7 @@
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/radj307/ATM-7-Plus?label=latest&style=flat-square)
 ![GitHub all releases](https://img.shields.io/github/downloads/radj307/ATM-7-Plus/total?style=flat-square)
 
-Server-side custom configs &amp; KubeJS scripts for minecraft servers running the [ATM7](https://github.com/AllTheMods/ATM-7) modpack.
+Custom serverside configs &amp; KubeJS scripts for minecraft servers running the [ATM-7](https://github.com/AllTheMods/ATM-7) modpack.
 
 
 ## Installation
