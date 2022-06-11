@@ -15,14 +15,24 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
+      - name: Bump Release Tag
+        id:   bump-tag
+        uses: laputansoft/github-tag-action@v4.6
+        with:
+          github_token:     ${{ github.token }}
+          release_branches: main
+
       - name: Create Archive
-        run:  zip -T9 ATM7-Plus-${{github.ref}}.zip ./*
+        run:  zip -T9 "ATM7-Plus-${{ steps.bump-tag.outputs.new_tag }}.zip" ./*
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
+          body:                     ${{ steps.bump-tag.outputs.changelog }}
+          tag_name:                 ${{ steps.bump-tag.outputs.new_tag }}
+          name:                     ${{ steps.bump-tag.outputs.new_tag }}
           generate_release_notes:   true
           draft:                    false
           prerelease:               false
           fail_on_unmatched_files:  true
-          files:                    ${{github.workspace}}/*.zip
+          files:                    ${{ github.workspace }}/*.zip
