@@ -30,6 +30,8 @@ jobs:
         with:
           github_token:     ${{ github.token }}
           release_branches: main
+          default_bump:     ${{ inputs.increment }}
+          
 
       - name: Create Archive
         run:  zip -T9 "ATM7-Plus-${{ steps.bump-tag.outputs.new_tag }}.zip" ./*
