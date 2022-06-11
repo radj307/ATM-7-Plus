@@ -19,7 +19,7 @@ jobs:
         run:  zip -T9 ATM7-Plus-${{github.ref}}.zip ./*
 
       - name: Create Release
-        uses: softprops/action-gh-release.yml@v1
+        uses: softprops/action-gh-release@v1
         with:
           generate_release_notes:   true
           draft:                    false
