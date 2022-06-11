@@ -11,9 +11,10 @@ on:
         required: false
         default:  'Patch'
         options:
-        - Major
-        - Minor
-        - Patch
+        - 'major'
+        - 'minor'
+        - 'patch'
+        - 'false'
         description: Which SEMVER component to increment.
 
 jobs:
