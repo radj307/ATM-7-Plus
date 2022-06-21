@@ -3,7 +3,7 @@
         "type": "mysticalagriculture:resource",
         "tier": "mysticalagriculture:3",
         "ingredient": {
-                "item": "mekanism:dust_sulfur"
+                "item": "thermal:sulfur"
         },
         "color": "FFD54C",
         "textures": {
