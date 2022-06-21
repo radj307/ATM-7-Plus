@@ -7,7 +7,7 @@
         },
         "color": "FFD54C",
         "textures": {
-                "flower": "mysticalagriculture:block/flower_dust",
-                "essence": "mysticalagriculture:item/essence_dust"
+                "flower": "mysticalagriculture:block/flower_rock",
+                "essence": "mysticalagriculture:item/essence_rock"
         }
 }
