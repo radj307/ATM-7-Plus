@@ -1,0 +1,12 @@
+onEvent('recipes', e => {
+        e.replaceInput({}, 'mekanism:dust_sulfur', '#forge:dusts/sulfur')
+        e.replaceInput({}, 'thermal:sulfur_dust', '#forge:dusts/sulfur')
+})
+
+// In the event that mekanism & thermal's sulfur dusts don't have the forge:dusts/sulfur tag, uncomment this block:
+/*
+onEvent('tags.items', e => {
+        e.add('mekanism:sulfur_dust', 'forge:dusts/sulfur')
+        e.add('thermal:sulfur_dust', 'forge:dusts/sulfur')
+})
+*/
