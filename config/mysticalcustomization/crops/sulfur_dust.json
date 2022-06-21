@@ -1,0 +1,13 @@
+{
+        "name": "Sulfur Dust",
+        "type": "mysticalagriculture:resource",
+        "tier": "mysticalagriculture:4",
+        "ingredient": {
+                "item": "thermal:sulfur_dust"
+        },
+        "color": "FFD54C",
+        "textures": {
+                "flower": "mysticalagriculture:block/flower_dust",
+                "essence": "mysticalagriculture:item/essence_dust"
+        }
+}
